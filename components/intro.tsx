@@ -4,7 +4,7 @@ import Image from 'next/image'
 import heroImg from "@/public/hero.jpg";
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { BsArrowRight, BsLinkedin, BsInstagram, BsTwitter } from 'react-icons/bs';
+import { BsArrowRight, BsLinkedin, BsInstagram, BsTwitter, BsSpotify } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
 
@@ -71,6 +71,8 @@ export default function Intro() {
         <a href='https://twitter.com/uguurakcora' target='_blank' className='bg-white p-3.5 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition cursor-pointer border border-black/10'> <BsInstagram /> </a>
         
         <a href='https://twitter.com/uguurakcora' target='_blank' className='bg-white p-3.5 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition cursor-pointer border border-black/10'> <BsTwitter /> </a>
+
+        <a href='https://open.spotify.com/user/34dehliz34' target='_blank' className='bg-white p-3.5 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition cursor-pointer border border-black/10'> <BsSpotify /> </a>
       </motion.div>
     </section>
   )
