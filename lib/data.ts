@@ -72,8 +72,8 @@ export const projectsData = [
   {
     title: "Gant",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind"],
+      "While working at Akinon Company, we coded this E-commerce project together with my teammate Uğur Karakurt.",
+    tags: ["Django", "Scss", "BEM", "Javascript", "Jquery", "Python", "Jinja 2"],
     imageUrl: gantImg,
   },
   {
