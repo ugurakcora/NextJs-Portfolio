@@ -16,7 +16,7 @@ function getCurrentYear() {
 export default function Intro() {
   const currentYear = getCurrentYear();
   return (
-    <section className='mb-28 max-w-[50rem] text-center'>
+    <section id='home' className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
       <div className='flex items-center justify-center'>
         <div className='relative'>
           <motion.div 
