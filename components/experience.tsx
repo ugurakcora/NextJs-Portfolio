@@ -1,7 +1,10 @@
 import React from 'react'
+import SectionHeading from './section-heading'
 
 export default function Experience() {
   return (
-    <div>E</div>
+    <section>
+      <SectionHeading>My Experience</SectionHeading>
+    </section>
   )
 }
