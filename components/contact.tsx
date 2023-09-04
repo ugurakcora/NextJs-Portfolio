@@ -1,7 +1,10 @@
 import React from 'react'
+import SectionHeading from './section-heading'
 
 export default function Contact() {
   return (
-    <div>C</div>
+    <section>
+      <SectionHeading>Contact Me</SectionHeading>
+    </section>
   )
 }
