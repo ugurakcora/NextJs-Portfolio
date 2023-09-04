@@ -3,7 +3,7 @@ import SectionHeading from './section-heading'
 
 export default function Contact() {
   return (
-    <section>
+    <section id='contact'>
       <SectionHeading>Contact Me</SectionHeading>
     </section>
   )
