@@ -35,34 +35,38 @@ export const links = [
 export const experiencesData = [
   {
     title: "Next4Biz",
+    position: "Front-end Developer",
     location: "İstanbul",
     description:
       "I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    icon: React.createElement(FaReact),
+    date: "2023",
   },
   {
     title: "Akinon",
+    position: "Front-end Developer",
     location: "İstanbul",
     description:
       "I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    icon: React.createElement(CgWorkAlt),
+    date: "2021",
   },
   {
     title: "Pixelplus",
+    position: "Front-end Developer",
     location: "İstanbul",
     description:
       "I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    icon: React.createElement(CgWorkAlt),
+    date: "2020",
   },
   {
     title: "Niceye",
+    position: "Front-end Developer",
     location: "İstanbul",
     description:
       "I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement(CgWorkAlt),
     date: "2019",
   },
 
