@@ -1,15 +1,10 @@
 "use server"
 
 import { Resend } from "resend";
+import { validateString } from "@/lib/utils";
 
 const resend = new Resend(process.env.RESED_API_KEY);
-
-const validateString = (value: unknown, maxLength: number) => {
-  if (!value || typeof value !== 'string' || value.length > maxLength){
-    return false;
-  }
-  return true;
-}
+const emailTo = process.env.EMAIL_TO;
 
 export const sendEmail = async (formData: FormData) => {
   const email = formData.get('senderEmail');
@@ -28,11 +23,11 @@ export const sendEmail = async (formData: FormData) => {
     }
   }
 
-  resend.emails.send({
+  await resend.emails.send({
     from: 'onboarding@resend.dev',
-    to: 'uakcora97@gmail.com',
+    to: emailTo as string,
     subject: 'New message from ' + formData.get('senderEmail'),
-    reply_to: email,
-    text: message
+    reply_to: email as string,
+    text: message as string
   })
 }
