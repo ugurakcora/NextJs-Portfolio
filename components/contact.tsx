@@ -1,6 +1,7 @@
 "use client"
 
 import React from 'react'
+import toast from 'react-hot-toast'
 import SectionHeading from './section-heading'
 import { motion } from 'framer-motion'
 import { useSectionInView } from '@/lib/hooks'
@@ -29,11 +30,11 @@ export default function Contact() {
       <form className='mt-10 flex flex-col' action={ async (formData) => {
         const { data, error } = await sendEmail(formData)
         if (error) {
-          alert(error)
+          toast.error(error)
           return;
         }
 
-        alert('Email send successfully!')
+        toast.success('Email send successfully!')
       }}>
         <input type='email' name='senderEmail' className='h-14 px-4 rounded-lg borderBlack' placeholder='Your email' maxLength={500} required/>
         <textarea name="senderMessage" className='h-52 my-3 rounded-lg borderBlack p-4' placeholder='Your message' maxLength={5000} required/>  
