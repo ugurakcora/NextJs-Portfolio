@@ -1,5 +1,6 @@
-import Header from '@/components/header'
 import './globals.css'
+import Header from '@/components/header'
+import Footer from '@/components/footer';
 import { Inter } from 'next/font/google'
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import ThemeContextProvider from '@/context/theme-context';
@@ -26,6 +27,7 @@ export default function RootLayout({
             <ActiveSectionContextProvider>
               <Header />
               {children}
+              <Footer />
               <Toaster position='top-right'/>
             </ActiveSectionContextProvider>
           </ThemeContextProvider>
