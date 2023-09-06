@@ -63,7 +63,7 @@ export default function Intro() {
         transition={{ delay: 0.1 }}
         >
           <div className='flex items-center justify-center flex-wrap gap-2 mt-4 sm:mt-0'>
-            <Link href='#contact' className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 outline-none rounded-full focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
+            <Link href='#contact' className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 outline-none rounded-full focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition dark:border dark:border-white/100 sm:dark:border-none'
             onClick={() => {
               setActiveSection("Contact");
               setTimeOfLastClick(Date.now());
