@@ -36,8 +36,8 @@ export default function Contact() {
 
         toast.success('Email send successfully!')
       }}>
-        <input type='email' name='senderEmail' className='h-14 px-4 rounded-lg borderBlack' placeholder='Your email' maxLength={500} required/>
-        <textarea name="senderMessage" className='h-52 my-3 rounded-lg borderBlack p-4' placeholder='Your message' maxLength={5000} required/>  
+        <input type='email' name='senderEmail' className='h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:text-gray-800 transition-all dark:outline-none' placeholder='Your email' maxLength={500} required/>
+        <textarea name="senderMessage" className='h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:text-gray-800 transition-all dark:outline-none' placeholder='Your message' maxLength={5000} required/>  
         <SubmitBtn />
       </form>
     </motion.section>
