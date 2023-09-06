@@ -62,26 +62,29 @@ export default function Intro() {
         animate={{ y: 100, opacity: 1 }}
         transition={{ delay: 0.1 }}
         >
-        <Link href='#contact' className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 outline-none rounded-full focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
-        onClick={() => {
-          setActiveSection("Contact");
-          setTimeOfLastClick(Date.now());
-        }}
-        >Contact Me Here <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' /></Link>
+          <div className='flex items-center justify-center flex-wrap gap-2 mt-4 sm:mt-0'>
+            <Link href='#contact' className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 outline-none rounded-full focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
+            onClick={() => {
+              setActiveSection("Contact");
+              setTimeOfLastClick(Date.now());
+            }}
+            >Contact Me Here <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' /></Link>
 
-        <a href='/CV.pdf' target='_blank' className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10' download>Download CV <HiDownload className='opacity-60 group-hover:translate-y-1 transition'/></a>
+            <a href='/CV.pdf' target='_blank' className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10' download>Download CV <HiDownload className='opacity-60 group-hover:translate-y-1 transition'/></a>
+          </div>
+
+          <div className='flex items-center gap-2 mt-4 sm:mt-0'>
+            <a href='https://www.linkedin.com/in/ugurakcora/' target='_blank' className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'> <BsLinkedin /> </a>
 
 
-        <a href='https://www.linkedin.com/in/ugurakcora/' target='_blank' className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'> <BsLinkedin /> </a>
+            <a href='https://github.com/ugurakcora' target='_blank' className='bg-white p-3.5 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'> <FaGithubSquare /> </a>
 
+            <a href='https://twitter.com/uguurakcora' target='_blank' className='bg-white p-3.5 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'> <BsInstagram /> </a>
+            
+            <a href='https://twitter.com/uguurakcora' target='_blank' className='bg-white p-3.5 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'> <BsTwitter /> </a>
 
-        <a href='https://github.com/ugurakcora' target='_blank' className='bg-white p-3.5 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'> <FaGithubSquare /> </a>
-
-        <a href='https://twitter.com/uguurakcora' target='_blank' className='bg-white p-3.5 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'> <BsInstagram /> </a>
-        
-        <a href='https://twitter.com/uguurakcora' target='_blank' className='bg-white p-3.5 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'> <BsTwitter /> </a>
-
-        <a href='https://open.spotify.com/user/34dehliz34' target='_blank' className='bg-white p-3.5 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'> <BsSpotify /> </a>
+            <a href='https://open.spotify.com/user/34dehliz34' target='_blank' className='bg-white p-3.5 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'> <BsSpotify /> </a>
+          </div>
       </motion.div>
     </section>
   )
