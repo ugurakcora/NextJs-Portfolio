@@ -38,7 +38,7 @@ export const experiencesData = [
     position: "Front-end Developer",
     location: "İstanbul",
     description:
-      "I immediately found a job as a front-end developer.",
+      "I took part in the development of the front end of the CRM product using React. I coded my profile page.",
     icon: React.createElement(FaReact),
     date: "2023",
   },
@@ -47,7 +47,7 @@ export const experiencesData = [
     position: "Front-end Developer",
     location: "İstanbul",
     description:
-      "I immediately found a job as a front-end developer.",
+      "I developed the frontends of e-commerce sites",
     icon: React.createElement(CgWorkAlt),
     date: "2021",
   },
@@ -56,7 +56,7 @@ export const experiencesData = [
     position: "Front-end Developer",
     location: "İstanbul",
     description:
-      "I immediately found a job as a front-end developer.",
+      "I coded the frontends of e-commerce and corporate companies",
     icon: React.createElement(CgWorkAlt),
     date: "2020",
   },
@@ -65,7 +65,7 @@ export const experiencesData = [
     position: "Front-end Developer",
     location: "İstanbul",
     description:
-      "I immediately found a job as a front-end developer.",
+      "I coded Pfizer's drug package insert sites.",
     icon: React.createElement(CgWorkAlt),
     date: "2019",
   },
