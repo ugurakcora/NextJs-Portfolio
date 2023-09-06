@@ -3,7 +3,10 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import gantImg from "@/public/gant.png";
-
+import boyserImg from "@/public/boyser.png";
+import formsungerImg from "@/public/formsunger.png";
+import vellteksImg from "@/public/vellteks.png";
+ 
 export const links = [
   {
     name: "Home",
@@ -81,25 +84,25 @@ export const projectsData = [
     imageUrl: gantImg,
   },
   {
-    title: "Gant",
+    title: "Boyser",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind"],
-    imageUrl: gantImg,
+      "When coding the website for Boyser, which is under the Erciyes Anadolu Holding.",
+    tags: ["Pug", "Scss", "BEM", "JavaScript", "jQuery", "XSLT"],
+    imageUrl: boyserImg,
   },
   {
-    title: "Gant",
+    title: "Form Sünger",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind"],
-    imageUrl: gantImg,
+      "When coding the website for Form Sünger, which is under the Erciyes Anadolu Holding.",
+    tags: ["Pug", "Scss", "BEM", "JavaScript", "jQuery", "XSLT"],
+    imageUrl: formsungerImg,
   },
     {
-    title: "Gant",
+    title: "Vellteks",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind"],
-    imageUrl: gantImg,
+      "When coding the website for Form Sünger, which is under the Erciyes Anadolu Holding.",
+    tags: ["Pug", "Scss", "BEM", "JavaScript", "jQuery", "XSLT"],
+    imageUrl: vellteksImg,
   },
  
 ] as const;
