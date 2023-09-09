@@ -1,6 +1,7 @@
 import About from "@/components/about";
 import Contact from "@/components/contact";
 import Experience from "@/components/experience";
+import Github from "@/components/github";
 import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
@@ -13,6 +14,7 @@ export default function Home() {
       <SectionDivider />
       <About />
       <Projects />
+      <Github />
       <Skills />
       <Experience />
       <Contact />
