@@ -28,7 +28,7 @@ const GitHub = () => {
       {data.map((repo) => (
         <div className="relative group h-full sm:w-3/4 flex-shrink-0" key={repo.repo}>
           <div className="card flex items-center flex-col h-full w-full p-4 md:p-6 sm:w-1/2">
-              <a href={repo.link} target="_blank" rel="noreferrer" class="font-semibold lg:text-lg flex items-center space-x-2">
+              <a href={repo.link} target="_blank" rel="noreferrer" className="font-semibold lg:text-lg flex items-center space-x-2">
                 <span className="truncate">{repo.repo}</span></a>
                 <p className="text-sm mt-2 text-zinc-500">dummy text</p>
                 <div className="flex items-center mt-auto">
