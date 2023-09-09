@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { getPinnedRepos } from '@/actions/githubService';
 import SectionHeading from './section-heading';
-import { BsStar, BsEye, BsFileEarmarkCode } from 'react-icons/bs'
+import { BsStar, BsEye } from 'react-icons/bs'
 
 const GitHub = () => {
   const [data, setData] = useState([]);
@@ -26,7 +26,7 @@ const GitHub = () => {
       <SectionHeading>Github</SectionHeading>
       <div className="flex gap-6 flex-wrap items-center justify-center">
       {data.map((repo) => (
-        <div className="relative group h-full sm:w-3/4 flex-shrink-0" key={repo.repo}>
+        <div className="group h-full w-1/2" key={repo.repo}>
           <div className="card flex items-center flex-col h-full w-full p-4 md:p-6 sm:w-1/2">
               <a href={repo.link} target="_blank" rel="noreferrer" className="font-semibold lg:text-lg flex items-center space-x-2">
                 <span className="truncate">{repo.repo}</span></a>
