@@ -14,7 +14,7 @@ export default function Home() {
       <SectionDivider />
       <About />
       <Projects />
-      <Github />
+      {/* <Github /> */}
       <Skills />
       <Experience />
       <Contact />
