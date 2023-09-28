@@ -4,70 +4,48 @@ import { useEffect, useState } from 'react';
 import { getPinnedRepos } from '@/actions/githubService';
 import SectionHeading from './section-heading';
 import { BsStar, BsEye } from 'react-icons/bs'
+import { githubPin } from '@/lib/data'
+import { useSectionInView } from '@/lib/hooks';
+import { motion } from 'framer-motion';
 
-const GitHub = () => {
-interface RepoData {
-  repo: string;
-  link: string;
-  language: string;
-  stars: number;
-  forks: number;
+const fadeInAnimationsVariants = {
+  initial: { 
+    y: 100, 
+    opacity: 0 
+  },
+  animate: ( index: number ) => ({
+    y: 0, 
+    opacity: 1,
+    transition: {
+      delay: 0.05 * index,
+    },
+  }),
 }
 
-const [data, setData] = useState<RepoData[]>([]);
 
-useEffect(() => {
-  async function fetchData() {
-    const response = await fetch('https://api.github.com/users/ugurakcora/repos');
-    const json = await response.json();
-    setData(json.map((repo: any) => ({
-      repo: repo.name,
-      link: repo.html_url,
-      language: repo.language,
-      stars: repo.stargazers_count,
-      forks: repo.forks_count,
-    })));
-  }
-  fetchData();
-}, []);
-  console.log(data)
-
+export default function Github() {
+  const { ref } = useSectionInView("Github");
   return (
-    <section className='scroll-mt-28 mb-28'>
-      <SectionHeading>Github</SectionHeading>
-      <div className="flex gap-6 flex-wrap items-center justify-center">
-      {data.map((item) => (
-        item.stars > 0 ? (
-          <div className="group h-full w-1/2" key={item.repo}>
-            <div className="card flex items-center flex-col h-full w-full p-4 md:p-6 sm:w-1/2">
-                <a href={item.link} target="_blank" rel="noreferrer" className="font-semibold lg:text-lg flex items-center space-x-2">
-                  <span className="truncate">{item.repo}</span></a>
-                  <p className="text-sm mt-2 text-zinc-500">dummy text</p>
-                  <div className="flex items-center mt-auto">
-                    <div className="text-sm inline-flex items-center gap-1 mr-4">
-                      {/* icon */}
-                      <span>{item.language}</span>
-                    </div>
-                    <div className="text-sm inline-flex items-center gap-1 mr-2">
-                      <BsStar />
-                      <span>{item.stars}</span>
-                    </div>
-                    <div className="text-sm inline-flex items-center gap-1 mr-2">
-                      <BsEye />
-                      <span>{item.forks}</span>
-                    </div>
-                </div>
-            </div>
-          </div>
-        ) : (null)
-      ))}
-      </div>
-
+    <section id='github' ref={ref} className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40'>
+        <SectionHeading>My Github</SectionHeading>
+        <div className='flex flex-wrap justify-center gap-2 text-lg text-gray-800'>
+          {
+            githubPin.map((item, index) => (
+              <motion.div key={index} className="bg-white border border-black/[0.1] rounded-lg px-5 py-3"
+                variants={fadeInAnimationsVariants}
+                initial='initial'
+                whileInView="animate"
+                viewport={{
+                  once: true,
+                }}
+                custom={index}
+              >{ item.name }</motion.div>
+            ))
+          }
+        </div>
     </section>
-  );
-};
-
-export default GitHub;
+  )
+}
 
 
 

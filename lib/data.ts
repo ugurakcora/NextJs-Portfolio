@@ -25,6 +25,10 @@ export const links = [
     hash: "#skills",
   },
   {
+    name: "Github",
+    hash: "#github",
+  },
+  {
     name: "Experience",
     hash: "#experience",
   },
@@ -125,4 +129,38 @@ export const skillsData = [
   "Python",
   "Django",
   "Framer Motion",
+] as const;
+
+export const githubPin = [
+  {
+    id: 1,
+    name: 'example-repo',
+    html_url: 'https://github.com/oktay/oktaycolakoglu-2022',
+    description: 'Example repo description',
+    fork: false,
+    stargazers_count: 0,
+    watchers_count: 0,
+    language: 'JavaScript',
+  },
+  {
+    id: 2,
+    name: 'example-repo',
+    html_url: '',
+    description: 'Example repo description',
+    fork: false,
+    stargazers_count: 0,
+    watchers_count: 0,
+    language: 'JavaScript',
+  },
+  {
+    id: 3,
+    name: 'example-repo',
+    html_url: '',
+    description: 'Example repo description',
+    fork: false,
+    stargazers_count: 0,
+    watchers_count: 0,
+    language: 'JavaScript',
+  }
+
 ] as const;
