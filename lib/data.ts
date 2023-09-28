@@ -135,7 +135,7 @@ export const githubPin = [
   {
     id: 1,
     name: 'example-repo',
-    html_url: 'https://github.com/oktay/oktaycolakoglu-2022',
+    html_url: 'https://github.com/ugurakcora',
     description: 'Example repo description',
     fork: false,
     stargazers_count: 0,

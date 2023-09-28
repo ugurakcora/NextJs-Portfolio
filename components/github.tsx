@@ -39,7 +39,12 @@ export default function Github() {
                   once: true,
                 }}
                 custom={index}
-              >{ item.name }</motion.div>
+                
+              >
+                <a href={item.html_url} target='_blank'>
+                  { item.name }
+                </a>
+                </motion.div>
             ))
           }
         </div>
