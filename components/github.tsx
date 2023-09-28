@@ -1,7 +1,4 @@
 "use client"
-
-import { useEffect, useState } from 'react';
-import { getPinnedRepos } from '@/actions/githubService';
 import SectionHeading from './section-heading';
 import { BsStar, BsEye } from 'react-icons/bs'
 import { githubPin } from '@/lib/data'
@@ -28,29 +25,29 @@ export default function Github() {
   return (
     <section id='github' ref={ref} className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40'>
         <SectionHeading>My Github</SectionHeading>
-        <div className='flex flex-wrap justify-center gap-2 text-lg text-gray-800'>
+        <div className="flex flex-wrap justify-between gap-2 text-lg text-gray-800">
           {
-            githubPin.map((item, index) => (
-              <motion.div key={index} className="bg-white border border-black/[0.1] rounded-lg px-5 py-3"
-                variants={fadeInAnimationsVariants}
-                initial='initial'
-                whileInView="animate"
-                viewport={{
-                  once: true,
-                }}
-                custom={index}
-                
-              >
-                <a href={item.html_url} target='_blank'>
-                  { item.name }
-                </a>
-                </motion.div>
-            ))
+          githubPin.map((item, index) => (
+            <motion.a className="w-full h-[180px] lg:w-[400px] lg:h-[200px] mb-5 bg-white shadow-md p-5 rounded-md flex flex-col justify-around items-center" key={index} href={item.html_url} target='_blank'
+            variants={fadeInAnimationsVariants}
+            initial='initial'
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}>
+              <h3 className="text-xl font-bold mb-3">{item.name}</h3>
+              <p className="text-sm text-gray-600 mb-3">{item.description}</p>
+              <div className="flex items-center">
+                <BsStar className="w-4 h-4 mr-1"/>
+                <span className="text-xs text-gray-600 mr-3">{item.stargazers_count}</span>
+                <BsEye className="w-4 h-4 mr-1"/>
+                <span className="text-xs text-gray-600">{item.watchers_count}</span>
+              </div>
+            </motion.a>
+          ))
           }
         </div>
+
     </section>
   )
 }
-
-
-
