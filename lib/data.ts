@@ -140,12 +140,18 @@ export const skillsData = [
   "React",
   "Next.js",
   "VueJS",
+  "Vuex",
+  "Pinia",
   "Git",
+  "Github",
+  "Gitlab",
+  "Bitbucket",
   "Redux",
   "ContextAPI",
   "Python",
   "Django",
   "Framer Motion",
+  "PrimeVue"
 ] as const;
 
 export const githubPin = [
