@@ -45,7 +45,8 @@ export const experiencesData = [
     title: "Gözen Digital Aviation",
     position: "Software Development Specialist",
     location: "İstanbul",
-    description: "As a Software Developer at Gözen Digital Aviation.",
+    description:
+      "I developed the front-end of the Simorgx flight simulator rental and management system for Gözen Digital Aviation. Using React, Ant Design, and the Context API, I created an intuitive and efficient user interface that enables seamless management of flight simulator resources. The project required deep knowledge of component-based architecture, state management, and UI/UX design principles, ensuring scalability and maintainability of the system.",
     icon: React.createElement(FaReact),
     date: "2023",
   },
@@ -151,7 +152,8 @@ export const skillsData = [
   "Python",
   "Django",
   "Framer Motion",
-  "PrimeVue"
+  "PrimeVue",
+  "Ant Design",
 ] as const;
 
 export const githubPin = [
