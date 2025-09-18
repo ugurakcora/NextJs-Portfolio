@@ -42,6 +42,14 @@ export const links = [
 // dummy datas
 export const experiencesData = [
   {
+  title: "Pingpong University",
+  position: "Senior Frontend Developer",
+  location: "İstanbul",
+  description: "Led frontend development for the university's web platforms and student management systems. Built responsive and user-friendly interfaces using React, TypeScript, and modern CSS frameworks. Designed and implemented frontend architecture for critical systems including student registration, course scheduling, and online examination platforms. Collaborated with backend teams to integrate APIs and ensure seamless user experiences across all university digital services.",
+  icon: React.createElement(FaVue),
+  date: "2025",
+},
+  {
     title: "Gözen Digital Aviation",
     position: "Software Development Specialist",
     location: "İstanbul",
