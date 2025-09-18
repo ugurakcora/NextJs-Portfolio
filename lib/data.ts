@@ -1,6 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaVue } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import gantImg from "@/public/gant.png";
 import boyserImg from "@/public/boyser.png";
