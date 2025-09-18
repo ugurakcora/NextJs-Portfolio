@@ -1,6 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact, FaVue } from "react-icons/fa";
+import { FaReact, FaVuejs } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import gantImg from "@/public/gant.png";
 import boyserImg from "@/public/boyser.png";
@@ -46,9 +46,9 @@ export const experiencesData = [
   position: "Senior Frontend Developer",
   location: "İstanbul",
   description: "Led frontend development for the university's web platforms and student management systems. Built responsive and user-friendly interfaces using React, TypeScript, and modern CSS frameworks. Designed and implemented frontend architecture for critical systems including student registration, course scheduling, and online examination platforms. Collaborated with backend teams to integrate APIs and ensure seamless user experiences across all university digital services.",
-  icon: React.createElement(FaVue),
+  icon: React.createElement(FaVuejs),
   date: "2025",
-},
+  },
   {
     title: "Gözen Digital Aviation",
     position: "Software Development Specialist",
