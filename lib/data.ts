@@ -46,7 +46,7 @@ export const experiencesData = [
   position: "Full Stack Engineer",
   location: "İstanbul",
   description: "I develop industrial software solutions for manufacturing and process management — real-time production tracking (MES) and low-code workflow and form engines. I work full-stack across every layer of these products, from the backend (.NET) and data layer (MSSQL) to the web interfaces (Angular).",
-  icon: React.createElement(FaAngularjs),
+  icon: React.createElement(Faangular),
   date: "2026",
   },
   {
